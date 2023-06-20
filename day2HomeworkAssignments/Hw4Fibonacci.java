@@ -7,9 +7,14 @@ public class Hw4Fibonacci {
 		int sum;
 		int n =8;
 		for(int i=1; i<=n;i++) {
-			System.out.print(firstNum + " ");
-			sum = firstNum + secNum;
-			firstNum = secNum;
-			secNum = sum;
-	}
+			if(i!=n) {
+				System.out.print(firstNum + ", ");
+				sum = firstNum + secNum;
+				firstNum = secNum;
+				secNum = sum;	
+			}
+			else {
+				System.out.print(firstNum + ".");
+			}			
+		}
 }
