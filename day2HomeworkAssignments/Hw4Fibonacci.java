@@ -5,16 +5,12 @@ public class Hw4Fibonacci {
 		int firstNum = 0;
 		int secNum = 1;
 		int sum;
-		int n =8;
+		int n = 8;
+		System.out.println("Output of Fibonacci series");
 		for(int i=1; i<=n;i++) {
-			if(i!=n) {
-				System.out.print(firstNum + ", ");
-				sum = firstNum + secNum;
-				firstNum = secNum;
-				secNum = sum;	
-			}
-			else {
-				System.out.print(firstNum + ".");
-			}			
-		}
+			System.out.print(firstNum + " ");
+			sum = firstNum + secNum;
+			firstNum = secNum;
+			secNum = sum;	
+		}		
 }
