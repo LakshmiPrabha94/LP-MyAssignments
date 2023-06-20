@@ -6,13 +6,10 @@ public class Hw4Fibonacci {
 		int secNum = 1;
 		int sum;
 		int n =8;
-		System.out.println(firstNum);
-		System.out.println(secNum);
-		for(int i=2; i<n;i++) {
+		for(int i=1; i<=n;i++) {
+			System.out.print(firstNum + " ");
 			sum = firstNum + secNum;
 			firstNum = secNum;
 			secNum = sum;
-			System.out.println(sum);
-		}
 	}
 }
